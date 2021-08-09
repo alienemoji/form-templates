@@ -10,17 +10,17 @@
 
 <div id="form-div">
 	<h1>Inquiries</h1>
-	<form action="processForm.cgi" method="post">
+	<form action="getData.py" method="post">
 		<p>
 			<input class="formBox" type="text" name="customer_name" placeholder="Your name">
 		</p>
 		<p>
-			<input class="formBox" type="text" name="customer_email" placeholder="Your email">
+			<input class="formBox" type="text" name="customer_email" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
 		</p>
 		<p>
-			<textarea class="formBox" type="text" name="message" placeholder="Message"></textarea>
+			<textarea class="formBox" type="text" name="message" placeholder="Message" required></textarea>
 		</p>
-		<div class="h-captcha" data-sitekey="01234567890"></div>
+		<div class="h-captcha" data-sitekey="85d66fc1-b858-40c4-beb2-c0148681bc59"></div>
 		<p>
 			<input id="submit-button" type="submit" value="Submit">
 		</p>
