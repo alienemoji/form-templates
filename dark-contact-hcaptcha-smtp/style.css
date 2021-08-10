@@ -25,7 +25,7 @@ textarea{
 	border: 2px solid #00aaff;
 	border-radius: 4px;
 	font-size: 14px;
-	background-color: #000;
+	background-color: #222;
 	color: #fff;
 	padding: 8px 16px;
 	transition: all 0.4s;
@@ -36,6 +36,7 @@ textarea{
 #submit-button:Hover{
 	border: 2px solid #00aaff;
 	background-color: #00aaff;
+	cursor: pointer;
 }
 
 .formBox{
@@ -59,13 +60,34 @@ h1{
 	margin: 0px;
 }
 
-@media screen and (max-width: 700px){
-	#form-div {
+@media screen and (max-width: 600px){
+	#form-div{
 		width: 90%;
 		padding: 0px;
 		border: none;
 	}
-	#submit-button {
-		font-size: 1.5em;
+}
+
+@media screen and (orientation: portrait) and (pointer: coarse),
+	screen and (orientation: portrait) and (pointer: none){
+	#form-div{
+		width: 90%;
+		padding: 0px;
+		border: none;
+	}
+	#submit-button{
+		font-size: 3em;
+	}
+	input.formBox{
+		font-size: 3em;
+	}
+	textarea.formBox{
+		font-size: 3em;
+		height: 8em;
+	}
+	h1{
+		font-size: 4em;
+		padding: 0.5em;
+		margin: 0.5em;
 	}
 }
