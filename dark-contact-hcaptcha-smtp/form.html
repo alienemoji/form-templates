@@ -9,18 +9,18 @@
 <body>
 
 <div id="form-div">
-	<h1>Inquiries</h1>
-	<form action="processForm.cgi" method="post">
+	<h1>Contact</h1>
+	<form action="getData.py" method="post">
 		<p>
-			<input class="formBox" type="text" name="customer_name" placeholder="Your name">
+			<input class="formBox" type="text" name="customer_name" placeholder="Your name" title="Name with letters only" pattern="^[a-zA-Z -]*$">
 		</p>
 		<p>
 			<input class="formBox" type="text" name="customer_email" placeholder="Your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address">
 		</p>
 		<p>
-			<textarea class="formBox" type="text" name="message" placeholder="Message" required></textarea>
+			<textarea class="formBox" type="text" name="message" placeholder="Message" title="Message" required></textarea>
 		</p>
-		<div class="h-captcha" data-sitekey="1234567890"></div>
+		<div class="h-captcha" data-sitekey="1234567890" data-theme="dark"></div>
 		<p>
 			<input id="submit-button" type="submit" value="Submit">
 		</p>
