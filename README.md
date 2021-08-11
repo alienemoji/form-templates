@@ -1,2 +1,2 @@
 # form-templates
-HTML form templates with stylesheets
+HTML forms with hCaptcha integration. Python script for processing the captcha + mail
